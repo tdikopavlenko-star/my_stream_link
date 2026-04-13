@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Стрімми з Arma Reforger та Arc Raiders. Огляди, гайд та лайфхаки. Підпишись на YouTube та Twitch.">
+    <meta name="keywords" content="Arma Reforger, Arc Raiders, Streamer, Геймплей, YouTube, Twitch">
+    <title>Геймерський Хаб | Arma & Arc Raiders</title>
+    <!-- Підключення іконок (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f0f12;
+            --card-bg: #1a1a20;
+            --accent-color: #e50914; /* Twitch red/Arma military feel */
+            --text-color: #ffffff;
+            --btn-hover: #2a2a35;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        p.bio {
+            color: #aaa;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card i {
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            background-color: var(--btn-hover);
+            border-color: var(--accent-color);
+        }
+
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: 0.5s;
+        }
+
+        .link-card:hover::before {
+            left: 100%;
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #4caf50;
+            background: rgba(76, 175, 80, 0.1);
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        
+        /* Адаптивність під мобільні */
+        @media (max-width: 600px) {
+            .container {
+                padding-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Аватарка (заміни URL на посилання на твоє фото) -->
+        <img src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/61ab8bfadb805e34f7ddb5fda8a8b26f~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=44aa45a1&x-expires=1776247200&x-signature=%2FQmC%2BqYHIsWgY8lp9s1JwBHv3Tc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my" alt="TimT_Zp" class="avatar">
+        
+        <h1>TimT_Zp</h1>
+        <p class="bio">Arma Reforger & Arc Raiders | Gamedev & Streams</p>
+
+        <div class="links">
+            <!-- Twitch -->
+            <a href="https://www.twitch.tv/timt_zp" target="_blank" class="link-card">
+                <i class="fab fa-twitch" style="color: #9146FF;"></i>
+                Підписатись на Twitch
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@TimT_Zp" target="_blank" class="link-card">
+                <i class="fab fa-youtube" style="color: #FF0000;"></i>
+                Канал YouTube
+            </a>
+
+            <!-- TikTok (тебе тут шукають) -->
+            <a href="https://www.tiktok.com/@timt_zp" target="_blank" class="link-card">
+                <i class="fab fa-tiktok"></i>
+                Мій TikTok
+            </a>
+
+            <!-- Discord (опціонально) -->
+            <a href="https://discord.gg/ТИВОЙ_КОД" target="_blank" class="link-card">
+                <i class="fab fa-discord" style="color: #5865F2;"></i>
+                Спільнота Discord
+            </a>
+            
+            <!-- Архіви стрімів / Блог -->
+            <a href="https://www.youtube.com/@TimT_Zp/videos" class="link-card">
+                <i class="fas fa-play-circle" style="color: #e50914;"></i>
+                Огляд на Arc Raiders
+            </a>
+        </div>
+
+        <div class="status">
+            <i class="fas fa-circle" style="font-size: 0.7rem; vertical-align: middle; margin-right: 5px;"></i> 
+            Доступно 24/7
+        </div>
+
+        <footer>
+            <p>&copy; 2024 TimT_Zp. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
